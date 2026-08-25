@@ -1,0 +1,44 @@
+/* ==========================================
+   تنسيقات CSS مخصصة للمشروع
+   ========================================== */
+
+/* 1. إعدادات الصفحة الأساسية وضبط الفوتر في الأسفل */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    flex: 1;
+}
+
+/* 2. تأثيرات تفاعلية لطيفة عند تحريك الماوس فوق البطاقات (Cards) */
+.card {
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 3. تنسيق تحسين الأزرار والروابط */
+.btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand {
+    letter-spacing: -0.5px;
+}
+
+/* 4. تنسيق مخصص للحاسبة وشارات المتجر */
+#calcResult {
+    transition: all 0.3s ease;
+}
+
+.badge {
+    font-weight: 500;
+}

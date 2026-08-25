@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - معرض الأعمال</title>
+    
+    <!-- ربط Bootstrap CSS المحلي -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر والقائمة العلوية -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4 text-primary" href="index.html">مجد بارغود</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-bold" href="blog.html">المدونة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="store.html">المتجر</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calculator.html">الحاسبة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معي</a></li>
+                    </ul>
+                    
+                    <button class="btn btn-outline-primary ms-lg-3" id="themeBtn">
+                        <span id="themeText">الوضع الداكن</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي للمدونة -->
+    <main class="py-5">
+        <div class="container">
+            
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">مدونتي التقنية</h1>
+                <p class="text-secondary">مقالات ومقالات مصغرة حول تطوير واجهات الويب وتجربتي البرمجية.</p>
+            </div>
+
+            <!-- شبكة المقالات -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <!-- مقال 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">تطوير الويب</span>
+                            <h5 class="card-title fw-bold">أهمية استخدام Bootstrap 5</h5>
+                            <p class="text-muted small mb-3">تاريخ النشر: 24 آب 2026</p>
+                            <p class="card-text text-secondary small">كيف تساعدك إطارات العمل مثل بوتستراب في تسريع بناء واجهات متجاوبة وبأقل جهد ممكن.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button class="btn btn-sm btn-outline-primary w-100 read-more-btn" data-title="أهمية استخدام Bootstrap 5" data-content="إطارات العمل توفر عليك كتابة مئات أسطر CSS وتضمن توافقية عالية مع الشاشات المختلفة.">قراءة المزيد</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مقال 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">جافاسكربت</span>
+                            <h5 class="card-title fw-bold">أساسيات التفاعل بـ JS</h5>
+                            <p class="text-muted small mb-3">تاريخ النشر: 22 آب 2026</p>
+                            <p class="card-text text-secondary small">تعرف على كيفية ربط العناصر والاستماع للأحداث مثل الضغط وتغيير الخصائص برمجياً.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button class="btn btn-sm btn-outline-primary w-100 read-more-btn" data-title="أساسيات التفاعل بـ JS" data-content="الجافاسكربت هي الروح الحقيقية لأي صفحة ويب، فهي تمنحها الحياة والقدرة على الاستجابة لمدخلات المستخدم.">قراءة المزيد</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مقال 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">نصائح مهنية</span>
+                            <h5 class="card-title fw-bold">كيف تجتاز مقابلة التدريب</h5>
+                            <p class="text-muted small mb-3">تاريخ النشر: 20 آب 2026</p>
+                            <p class="card-text text-secondary small">أهم النصائح التي يجب أن تتبعها لإظهار مهاراتك بشكل احترافي أمام لجنة التقييم.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button class="btn btn-sm btn-outline-primary w-100 read-more-btn" data-title="كيف تجتاز مقابلة التدريب" data-content="التركيز على فهم الكود خطوة بخطوة، والقدرة على شرح كل سطر، أهم بكثير من مجرد نسخه!">قراءة المزيد</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- نافذة منبثقة (Modal) لعرض تفاصيل المقال عند الضغط عليه (تفاعل JS) -->
+    <div class="modal fade" id="articleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalArticleTitle">عنوان المقال</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalArticleBody">
+                    محتوى المقال الكامل يظهر هنا...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer class="py-3 bg-body-tertiary border-top text-center mt-auto">
+        <div class="container">
+            <small class="text-secondary">جميع الحقوق محفوظة &copy; 2026</small>
+        </div>
+    </footer>
+
+    <!-- ربط ملفات الجافاسكربت -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

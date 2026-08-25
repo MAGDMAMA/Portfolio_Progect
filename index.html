@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السيرة الذاتية - معرض الأعمال</title>
+
+    <!-- ربط Bootstrap CSS محلياً -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- ملف التنسيق الخاص بنا -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- الهيدر والقائمة العلوية -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm py-3"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-4 text-primary" href="index.html"
+            >مجد برغود</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">المدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">المتجر</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calculator.html">الحاسبة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تواصل معي</a>
+              </li>
+            </ul>
+
+            <!-- زر تفاعل الجافاسكربت -->
+            <button class="btn btn-outline-primary ms-lg-3" id="themeBtn">
+              <span id="themeText">الوضع الداكن</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="py-5">
+      <div class="container">
+        <!-- قسم التعريف الشخصي -->
+        <section
+          class="row align-items-center mb-5 bg-body-tertiary p-4 rounded-4 shadow-sm border"
+        >
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <div
+              class="mx-auto d-flex align-items-center justify-content-center bg-primary text-white rounded-circle shadow"
+              style="
+                width: 140px;
+                height: 140px;
+                font-size: 3rem;
+                font-weight: bold;
+              "
+            >
+              مـ
+            </div>
+          </div>
+          <div class="col-md-8 text-center text-md-start">
+            <h1 class="fw-bold mb-2">مرحباً، أنا مطور واجهات الويب</h1>
+            <p class="text-secondary lead fs-6">
+              أعمل على بناء مواقع وتطبيقات ويب حديثة متجاوبة بالكامل باستخدام
+              أحدث التقنيات HTML5, CSS3, JS, و Bootstrap 5.
+            </p>
+            <div
+              class="d-flex gap-2 justify-content-center justify-content-md-start"
+            >
+              <a href="#" class="btn btn-primary btn-sm px-3">LinkedIn</a>
+              <a href="#" class="btn btn-dark btn-sm px-3">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم المشاريع -->
+        <section class="mt-5">
+          <h2 class="fw-bold text-center mb-4">أبرز المشاريع</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- بطاقة مشروع 1 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                <div
+                  class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center rounded-top text-secondary fw-bold"
+                  style="height: 160px; font-size: 1.2rem"
+                >
+                  مشروع 1
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">تطبيق إدارة المهام</h5>
+                  <p class="card-text text-secondary small">
+                    واجهة تفاعلية تمكن المستخدم من تنظيم المهام اليومية بسهولة.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <button class="btn btn-sm btn-outline-primary w-100">
+                    معاينة التفاصيل
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- بطاقة مشروع 2 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                <div
+                  class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center rounded-top text-secondary fw-bold"
+                  style="height: 160px; font-size: 1.2rem"
+                >
+                  مشروع 2
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">لوحة تحكم بيانات</h5>
+                  <p class="card-text text-secondary small">
+                    تصميم لوحة إحصائيات متجاوبة تعرض الجداول والبيانات بشكل
+                    مباشر.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <button class="btn btn-sm btn-outline-primary w-100">
+                    معاينة التفاصيل
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- بطاقة مشروع 3 -->
+            <div class="col">
+              <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+                <div
+                  class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center rounded-top text-secondary fw-bold"
+                  style="height: 160px; font-size: 1.2rem"
+                >
+                  مشروع 3
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">منصة تعليمية</h5>
+                  <p class="card-text text-secondary small">
+                    واجهة عرض الدورات والمقالات مع سهولة التنقل والتصفح.
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <button class="btn btn-sm btn-outline-primary w-100">
+                    معاينة التفاصيل
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="py-3 bg-body-tertiary border-top text-center mt-auto">
+      <div class="container">
+        <small class="text-secondary">جميع الحقوق محفوظة &copy; 2026</small>
+      </div>
+    </footer>
+
+    <!-- ربط Bootstrap JS محلياً -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

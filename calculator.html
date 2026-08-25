@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحاسبة - معرض الأعمال</title>
+    
+    <!-- ربط Bootstrap CSS المحلي -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر والقائمة العلوية -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4 text-primary" href="index.html">مجد بارغود</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">المدونة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="store.html">المتجر</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-bold" href="calculator.html">الحاسبة</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معي</a></li>
+                    </ul>
+                    
+                    <button class="btn btn-outline-primary ms-lg-3 btn-sm" id="themeBtn">الوضع الداكن</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي للحاسبة -->
+    <main class="py-5">
+        <div class="container">
+            
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">الحاسبة البسيطة</h1>
+                <p class="text-secondary">أدخل رقمين وقم بإجراء العمليات الحسابية تفاعلياً.</p>
+            </div>
+
+            <!-- صندوق الحاسبة -->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 bg-body-tertiary p-4 rounded-4">
+                        <div class="card-body">
+                            
+                            <!-- حقل الرقم الأول -->
+                            <div class="mb-3">
+                                <label for="num1" class="form-label fw-bold">الرقم الأول:</label>
+                                <input type="number" class="form-control" id="num1" placeholder="أدخل الرقم الأول هنا">
+                            </div>
+
+                            <!-- حقل الرقم الثاني -->
+                            <div class="mb-3">
+                                <label for="num2" class="form-label fw-bold">الرقم الثاني:</label>
+                                <input type="number" class="form-control" id="num2" placeholder="أدخل الرقم الثاني هنا">
+                            </div>
+
+                            <!-- أزرار العمليات -->
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-between my-4">
+                                <button class="btn btn-primary flex-fill" onclick="calculate('+')">جمع (+)</button>
+                                <button class="btn btn-success flex-fill" onclick="calculate('-')">طرح (-)</button>
+                                <button class="btn btn-warning text-dark flex-fill" onclick="calculate('*')">ضرب (×)</button>
+                                <button class="btn btn-danger flex-fill" onclick="calculate('/')">قسمة (÷)</button>
+                            </div>
+
+                            <!-- خانة إظهار النتيجة -->
+                            <div class="alert alert-secondary text-center fs-5 mb-0" id="calcResult">
+                                النتيجة ستظهر هنا...
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="py-3 bg-body-tertiary border-top text-center mt-auto">
+        <div class="container">
+            <small class="text-secondary">جميع الحقوق محفوظة &copy; 2026</small>
+        </div>
+    </footer>
+
+    <!-- ربط ملفات الجافاسكربت -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
